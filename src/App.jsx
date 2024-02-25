@@ -1,5 +1,10 @@
-import userData from './userData.json';
-import Profile from './components/Profile/Profile'
+import userData from "./userData.json";
+import friends from "./friends.json";
+import transactions from "./transactions.json";
+
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 function App() {
   return (
@@ -11,10 +16,10 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 }
 
-export default App
-
-
+export default App;

@@ -1,0 +1,55 @@
+td,
+th {
+  font-size: 20px;
+  font-weight: 500;
+
+  padding: 5px;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.tableTheard {
+  background-color: black;
+  color: #fff;
+  font-size: 18px;
+}
+
+.tableTbody {
+  border: 2px solid black;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.tableTbody td {
+  border: 2px solid black;
+}
+
+.tableLine {
+  background-color: white;
+  color: black;
+
+  text-align: center;
+}
+
+.tableLine:nth-child(even) {
+  background-color: gray;
+}
+
+.tableLineType {
+  text-align: left;
+  padding-left: 75px;
+}
+
+.table tbody tr:hover {
+  background-color: lightblue;
+}
